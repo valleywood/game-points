@@ -10,3 +10,5 @@ If it was to be a more than a simple UI Demo I would have written more tests to 
 Install node modules for project by typing `npm install`
 
 Start the app by running `npm start`
+
+Run tests by typing running `npm test`
