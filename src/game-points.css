@@ -1,0 +1,74 @@
+/**
+ Use some PostCSS plugin to handle vendor specific prefixes to for example flex-box
+ Maybe some media-queries to make i look better in mobile contexts
+ Would also have used some preprocessors like sass or less if the CSS would be more complex than this
+ */
+
+.header {
+  height: 75px;
+  padding: 20px;
+}
+
+.points, #root {
+  height: 100%;
+}
+
+.points {
+  display: flex;
+}
+
+.player {
+  min-width: 350px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  border-left: 1px solid black;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.player-items, .game-items ul {
+  flex-grow: 0;
+  overflow: auto;
+  min-height: 2em;
+}
+
+.player-items {
+  height: calc(100% - 235px);
+}
+
+.game-items {
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.game-items ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer, .header {
+  flex-shrink: 0;
+  background-color: #2ab8ac;
+  color: white;
+}
+
+.bonus, .total {
+  border-top: 1px solid black;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.footer > * {
+  padding: 15px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}

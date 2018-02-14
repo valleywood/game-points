@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="points"
+>
+  <div
+    className="game-items"
+  >
+    <header
+      className="header"
+    >
+      <h1>
+        Kahoot! POINTS
+      </h1>
+    </header>
+    <GameItemLinks />
+  </div>
+  <div
+    className="player"
+  >
+    <Player />
+  </div>
+</div>
+`;
